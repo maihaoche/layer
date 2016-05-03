@@ -779,7 +779,7 @@ ready.run = function(){
     };
 };
 
-'function' === typeof define ? define(function(){
+'function' === typeof define && define.amd ? define(function(){
     ready.run();
     return layer;
 }) : function(){
